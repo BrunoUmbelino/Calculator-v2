@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  font-family: "Audiowide", cursive;
+  font-size: 16px;
+  background: linear-gradient(120deg, hsl(166, 95%, 51%), hsl(166, 95%, 41%));
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  border-radius: 10px;
+  max-width: 20rem;
+  border: black solid 5px;
+  color: white;
+  background-color: #171717;
+  box-shadow: 5px 5px 24px -3px rgba(0, 0, 0, 0.64);
+}
+
+.screen {
+  min-height: 9rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-align: end;
+}
+
+#display {
+  font-size: 2.5rem;
+  min-height: 60px;
+}
+
+.expression {
+  font-size: 1.2rem;
+}
+
+.btn {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1rem;
+  width: auto;
+  border: solid 1px black;
+  background-color: hsl(0, 0%, 21%);
+  color: white;
+}
+
+.btn:hover {
+  color: white;
+  background-color: hsl(0, 0%, 11%);
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.error {
+  color: hsl(0, 85%, 50%);
+  font-size: 1.5rem;
+  text-align: start;
+}
+
+.by {
+  color: black;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 1.2rem;
+  letter-spacing: 1px;
+}
+
+/* --------------- btns ----------------------- */
+
+.btns {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "ac back div mult"
+    "sev eig nin subt"
+    "fou fiv six addi"
+    "one two thre equa"
+    "zer zer dec equa";
+}
+
+#clear {
+  grid-area: ac;
+  background-color: hsl(0, 0%, 16%);
+}
+
+#clear:hover {
+  background-color: hsl(0, 0%, 6%);
+  color: white;
+}
+
+#backspace {
+  grid-area: back;
+  background-color: hsl(0, 0%, 16%);
+}
+
+#backspace:hover {
+  background-color: hsl(0, 0%, 6%);
+  color: white;
+}
+
+#divide {
+  grid-area: div;
+  background-color: hsl(0, 0%, 16%);
+}
+
+#divide:hover {
+  background-color: hsl(0, 0%, 6%);
+  color: white;
+}
+
+#seven {
+  grid-area: sev;
+}
+
+#eight {
+  grid-area: eig;
+}
+
+#nine {
+  grid-area: nin;
+}
+
+#multiply {
+  grid-area: mult;
+  background-color: hsl(0, 0%, 16%);
+}
+
+#multiply:hover {
+  background-color: hsl(0, 0%, 6%);
+  color: white;
+}
+
+#four {
+  grid-area: fou;
+}
+
+#five {
+  grid-area: fiv;
+}
+
+#six {
+  grid-area: six;
+}
+
+#subtract {
+  grid-area: subt;
+  background-color: hsl(0, 0%, 16%);
+}
+
+#subtract:hover {
+  background-color: hsl(0, 0%, 6%);
+  color: white;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#thre {
+  grid-area: thre;
+}
+
+#add {
+  grid-area: addi;
+  background-color: hsl(0, 0%, 16%);
+}
+
+#add:hover {
+  background-color: hsl(0, 0%, 6%);
+  color: white;
+}
+
+#zero {
+  grid-area: zer;
+}
+
+#decimal {
+  grid-area: dec;
+}
+
+#equals {
+  grid-area: equa;
+  background-color: #ffc309;
+}
+
+#equals:hover {
+  color: black;
+}
