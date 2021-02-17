@@ -22,23 +22,29 @@ const BtnValues = [
 ];
 
 const Btns = (props) => {
+
   const Btns = BtnValues.map((item) => {
     let clickBehavior;
 
     if (item.id === "clear") {
-      clickBehavior = props.clearDisplay;
+      clickBehavior = props.reset;
     } else if (item.id === "equals") {
       clickBehavior = props.calculate;
     } else if (item.id === "backspace") {
       clickBehavior = props.backspace;
     } else if (/[-+÷x]/.exec(item.simb)) {
-      clickBehavior = props.handleOperation
+      clickBehavior = props.handleOperation;
     } else {
-      clickBehavior = props.handleNumber
+      clickBehavior = props.handleNumber;
     }
 
     return (
-      <button key={item.id} id={item.id} onClick={clickBehavior} className='btn'>
+      <button
+        key={item.id}
+        id={item.id}
+        onClick={clickBehavior}
+        className="btn"
+      >
         {item.simb}
       </button>
     );
