@@ -1,4 +1,4 @@
-# Calculator
+# Calculator App
 link: https://brunoumbelino.github.io/Calculator-v2/
 ### Description
 A simple and visually pleasing calculator 
