@@ -1,17 +1,18 @@
 # Calculator App
 link: https://brunoumbelino.github.io/Calculator-v2/
+
 ### Description
-A simple and visually pleasing calculator 
-### Inspiration
-This project is a solution to the challenge **Build a JavaScript Calculator**, proposed by the [FreeCodeCamp](https://www.freecodecamp.org/) teaching platform in the certification of Front End Development Libraries Projects 
+Calculator App is a conventional, simple and responsive calculator, the project was developed as a solution to the **Build a JavaScript Calculator** challenge proposed by the [FreeCodeCamp](https://www.freecodecamp.org/) community in the certification of Front End Development Libraries. 
+
 ### Technologies
-- React (functional components)
+- React (Functional Components, Hooks)
 - Redux (Toolkit)
-- Bootstrap
+- Bootstrap (Reactstrap)
 - SASS
 - JavaScript ES6
 - HTML 5
 - CSS 3
+- 
 ### Tests proposed by the challenge
     1. My calculator should contain a clickable element containing an "=" (equal sign) with a corresponding id="equals"
     2. My calculator should contain 10 clickable elements containing one number each from 0-9, with the following corresponding IDs: id="zero", id="one", id="two", id="three", id="four", id="five", id="six", id="seven", id="eight", and id="nine"
