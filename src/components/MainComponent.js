@@ -82,33 +82,33 @@ export const Main = () => {
 
   return (
     <div className="main">
-      <Container className="calculator">
-        <Row>
-          <Col>
-            <div>
-              <span>||</span>
-            </div>
-            <Row className="screen">
-              <Label className="exp">
-                {display.length > 15 ? "" : expression}
-              </Label>
-              <Label id="display">
-                {display.length > 15 ? <LimitError /> : display}
-              </Label>
-            </Row>
-            <Row>
-              <Btns
-                handleNumber={handleNumber}
-                handleOperation={handleOperation}
-                calculate={calculate}
-                backspace={backspace}
-                reset={reset}
-              />
-            </Row>
-          </Col>
-        </Row>
-      </Container>
-      <div>
+      <div className="wrap">
+        <Container className="calculator">
+          <Row>
+            <Col>
+              <div>
+                <span>||</span>
+              </div>
+              <Row className="screen">
+                <Label className="exp">
+                  {display.length > 15 ? "" : expression}
+                </Label>
+                <Label id="display">
+                  {display.length > 15 ? <LimitError /> : display}
+                </Label>
+              </Row>
+              <Row>
+                <Btns
+                  handleNumber={handleNumber}
+                  handleOperation={handleOperation}
+                  calculate={calculate}
+                  backspace={backspace}
+                  reset={reset}
+                />
+              </Row>
+            </Col>
+          </Row>
+        </Container>
         <span className="by">By Bruno Umbelino</span>
       </div>
     </div>
